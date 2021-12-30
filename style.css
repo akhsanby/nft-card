@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  margin-top: 10px;
+}
+
+.subtitle {
+  color: hsl(215, 32%, 27%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.price-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price img {
+  width: 10px;
+  height: 15px;
+}
+
+.price p {
+  color: hsl(178, 100%, 50%);
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.time img {
+  width: 15px;
+  height: 15px;
+}
+
+.time p {
+  color: hsl(215, 32%, 27%);
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.horizontal-line {
+  border-top: 2px solid hsl(215, 32%, 27%);
+}
+
+.credit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.credit img {
+  width: 25px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50px;
+}
+
+.credit p {
+  color: hsl(215, 32%, 27%);
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.credit p span {
+  color: hsl(0, 0%, 100%);
+}
+
+.box-1 {
+  background-color: white;
+  margin: 100px;
+}
+
+.box-2 {
+  background-color: white;
+  padding: 100px;
+}
