@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
+/*css reset*/
 * {
   margin: 0;
   padding: 0;
@@ -12,63 +13,111 @@ body {
 }
 
 .container {
+  display: flex;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .card {
+  margin: auto;
   width: 250px;
   background-color: hsl(216, 50%, 16%);
-  padding: 20px;
-  border-radius: 15px;
+  padding: 14px;
+  border-radius: 10px;
 }
 
-.card img {
+.card .wrapper-img {
+  position: relative;
+}
+
+.card .wrapper-img:hover .overlay-view {
+   opacity: 0.7;
+   cursor: pointer;
+}
+
+.card .wrapper-img .icon-nft {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
+  display: block;
+}
+
+.card .wrapper-img .overlay-view {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.card .wrapper-img .icon-view {
+  width: 30px;
+  position: absolute;
+  color: white;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+}
+
+.card .wrapper-img:hover .icon-view {
+  opacity: 1;
 }
 
 .title {
   color: hsl(0, 0%, 100%);
-  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 .subtitle {
-  color: hsl(215, 32%, 27%);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 100%;
+  color: hsl(215, 47%, 68%);
+  font-size: 14px;
+  padding: 10px 0;
+  font-weight: 300;
 }
 
 .price-time {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .price {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: hsl(178, 100%, 50%);
 }
 
 .price img {
-  width: 10px;
+  width: 9px;
   height: 15px;
 }
 
-.price p {
-  color: hsl(178, 100%, 50%);
-  margin-left: 5px;
+.price span {
   font-size: 13px;
+  margin-left: 3px;
+  font-weight: 600;
 }
 
 .time {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: hsl(215,47%,68%);
 }
 
 .time img {
@@ -76,45 +125,42 @@ body {
   height: 15px;
 }
 
-.time p {
-  color: hsl(215, 32%, 27%);
-  margin-left: 5px;
+.time span {
   font-size: 13px;
+  font-weight: 300;
+  margin-left: 3px;
 }
 
 .horizontal-line {
-  border-top: 2px solid hsl(215, 32%, 27%);
+  border-top: 0.1px solid hsl(215, 32%, 27%);
+  margin-bottom: 10px;
 }
 
 .credit {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-top: 10px;
+  flex-direction: row;
 }
 
 .credit img {
-  width: 25px;
-  border: 1px solid hsl(0, 0%, 100%);
+  width: 20px;
+  height: 20px;
   border-radius: 50px;
+  border: 1px solid white;
 }
 
 .credit p {
-  color: hsl(215, 32%, 27%);
-  margin-left: 10px;
   font-size: 13px;
+  color: hsl(215,47%,68%);
+  margin-left: 10px;
+  font-weight: 300;
 }
 
 .credit p span {
   color: hsl(0, 0%, 100%);
 }
 
-.box-1 {
-  background-color: white;
-  margin: 100px;
-}
-
-.box-2 {
-  background-color: white;
-  padding: 100px;
+.credit p span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
